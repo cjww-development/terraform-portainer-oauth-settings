@@ -1,0 +1,9 @@
+services:
+  portainer:
+    image: portainer/portainer-ce:2.27.6
+    hostname: portainer.app.cjww.dev
+    container_name: portainer
+    ports:
+      - "9442:9000"
+    restart: unless-stopped
+  
